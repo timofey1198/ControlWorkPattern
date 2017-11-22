@@ -37,43 +37,43 @@ namespace Test_my_speed_1
         /// <summary>
         /// Функция, реализующая циклический ввод числа
         /// </summary>
-        /// <param name="wellcome"></param>
+        /// <param name="welcome"></param>
         /// <returns>
         /// Введенное число
         /// </returns>
-        public static int IntInput(string wellcome)
+        public static int IntInput(string welcome)
         {
             int n = 0;
-            Print(wellcome);
+            Print(welcome);
             while (!int.TryParse(Console.ReadLine(), out n))
             {
-                Print("Error. " + wellcome);
+                Print("Error. " + welcome);
             }
             return n;
         }
 
 
-        public static int IntInput(string wellcome, int minValue, int maxValue)
+        public static int IntInput(string welcome, int minValue, int maxValue)
         {
             int n = 0;
-            Print(wellcome);
+            Print(welcome);
             while (!int.TryParse(Console.ReadLine(), out n) || n > maxValue || n < minValue)
             {
-                Print("Error. " + wellcome);
+                Print("Error. " + welcome);
             }
             return n;
         }
 
 
-        public static int IntInput(string wellcome, int minValue, int maxValue, SimpleFunction function)
+        public static int IntInput(string welcome, int minValue, int maxValue, SimpleFunction function)
         {
             int n = 0;
-            Print(wellcome);
+            Print(welcome);
             function();
             while (!int.TryParse(Console.ReadLine(), out n) || n > maxValue || n < minValue)
             {
                 Console.Clear();
-                Print("Error. " + wellcome);
+                Print("Error. " + welcome);
                 function();
             }
             return n;
@@ -82,35 +82,35 @@ namespace Test_my_speed_1
         /// <summary>
         /// Функция, реализующая циклический ввод числа
         /// </summary>
-        /// <param name="wellcome"></param>
+        /// <param name="welcome"></param>
         /// <returns>
         /// Введенное число
         /// </returns>
-        public static uint UintInput(string wellcome)
+        public static uint UintInput(string welcome)
         {
             uint n = 0;
-            Print(wellcome);
+            Print(welcome);
             while (!uint.TryParse(Console.ReadLine(), out n))
             {
                 Console.Clear();
-                Print(wellcome);
+                Print(welcome);
             }
             return n;
         }
         /// <summary>
         /// Функция, реализующая циклический ввод числа
         /// </summary>
-        /// <param name="wellcome"></param>
+        /// <param name="welcome"></param>
         /// <returns>
         /// Введенное число
         /// </returns>
-        public static double DoubleInput(string wellcome)
+        public static double DoubleInput(string welcome)
         {
             double n = 0;
-            Print(wellcome);
+            Print(welcome);
             while (!double.TryParse(Console.ReadLine(), out n))
             {
-                Print("Error. " + wellcome);
+                Print("Error. " + welcome);
             }
             return n;
         }
